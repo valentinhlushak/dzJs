@@ -19,9 +19,39 @@
     <!-- <button onclick="link()">Клон</button>
     <input id="clone" type="text"placeholder="введите текст"> -->
     
-    <button onclick="click()"><img  src="https://klike.net/uploads/posts/2018-06/1528641301_4.jpg" alt=""style=height:200px;width:200px;></button>
+    <!-- <button onclick="click()"><img  src="https://klike.net/uploads/posts/2018-06/1528641301_4.jpg" alt=""style=height:200px;width:200px;></button>
     <a href="#"id="img2"><img  src="https://i.pinimg.com/564x/a9/3c/b4/a93cb4e0316ef9c4db83846550ff4deb.jpg" alt=""style=height:200px;width:200px;></a>
-    <a href="#"id="img3"><img  src="https://papik.pro/uploads/posts/2021-01/1611575168_15-p-malenkie-risunki-dlya-lichnogo-dnevnika-ka-15.jpg" style=height:200px;width:100px;></a>
+    <a href="#"id="img3"><img  src="https://papik.pro/uploads/posts/2021-01/1611575168_15-p-malenkie-risunki-dlya-lichnogo-dnevnika-ka-15.jpg" style=height:200px;width:100px;></a> -->
+   
+    <!-- */дз пример№1/* -->
+    <!-- дописали -->
+    
+        <form name="myForm">
+            <p><select name="names">          
+            </select></p>
+            <input type="text" name="textInput"placeholder="Имя" />
+            <input type="text2" name="text2Input"placeholder="Фамилия"/>
+            <p><input type="button"name="add"value="Добавить" /><input type="button"
+                    name="remove"
+                    value="Удалить" /></p>
+        </form>
+        <script>
+            let add = myForm.add;
+            let remove = myForm.remove;
+            let listNames = myForm.names;
+                function addOption() {
+                    let text = myForm.textInput.value;
+                    let text2= myForm.text2Input.value;
+                    let newOption = new Option(text +"_"+text2);
+                    listNames.options[listNames.options.length] = newOption;
+                }
+                function removeOption() {
+                    let selectedIndex = listNames.options.selectedIndex;
+                    listNames.options[selectedIndex] = null;
+                }
+                add.addEventListener('click', addOption);
+                remove.addEventListener('click', removeOption);
+        </script>
 
 
 
