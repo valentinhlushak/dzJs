@@ -251,3 +251,35 @@
 //   }, 5000);
 // }
  
+// Задание 7* по объектам
+// let selfGeneratedUser = {
+//   getInfo() {
+//     let questionName = prompt('Введите свое имя');
+//     let questionEmail = prompt('Введите свой email');
+//     let questionPhone = +prompt('Введите свой номер телефона');
+//     selfGeneratedUser.name = questionName;
+//     selfGeneratedUser.email = questionEmail;
+//     selfGeneratedUser.phone = questionPhone;
+//   },
+//   introduce() {
+//     if (selfGeneratedUser.name == '') {
+//     } else {
+//       alert(selfGeneratedUser.name);
+//     }
+//     if (selfGeneratedUser.email == '') {
+//     } else {
+//       alert(selfGeneratedUser.email);
+//     }
+//     if (selfGeneratedUser.phone == '') {
+//       return false;
+//     } else {
+//       alert(selfGeneratedUser.phone);
+//     }
+//   },
+//   name: '',
+//   email: '',
+//   phone: '',
+// };
+// selfGeneratedUser.getInfo();
+// selfGeneratedUser.introduce();
+// console.log(selfGeneratedUser);
