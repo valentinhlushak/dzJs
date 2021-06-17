@@ -87,4 +87,199 @@
 //     img1.appendChild(b);
 // }
 
+
+//Домашка объекты, функции, время
+
+
+// (10)зд3:
+
+// let circle = {
+//     radius: 20,
+//     color: 'red',
+//     calculateCircumference() {
+//     let pi = 3.14;
+//     let lengthCircle = 2 * pi * this.radius;
+//         console.log(lengthCircle);
+//     }
+// }
+// circle.calculateCircumference();
+
+
+// дз(10)зд4;
+
+// let message = {
+//     text:"" ,
+//     getMessage(argument) {
+//         this.text = argument;
+//     },
+//     showMessage() {
+//         alert(this.text)
+//     }
+// }
+// message.getMessage("fghj");
+// message.showMessage();
+
+
+// Дз(10) №5
+
+
+// let rectangle = {
+//     height: 230,
+//     width: 430,
+//     getArea() {
+//         return this.height*this.width
+//     }
+
+// }
+// console.log(rectangle.width);
+// console.log(rectangle.height);
+// console.log(rectangle.getArea());
+
+// let obj = {
+//     name:"ivan"
+// }
+// function isEmpty(obj) {
+//     if (Object.keys(obj).length > 0) {
+//         return false;
+
+//     } else {
+//         return true;
+//     }
+// }
+// console.log(isEmpty(obj));
+
+// Дз(10)№6
+
+
+// let obj = {
+//     name:"ivan"
+// }
+// function isEmpty(obj) {
+//     if (Object.keys(obj).length > 0) {
+//         return false;
+
+//     } else {
+//         return true;
+//     }
+// }
+// console.log(isEmpty(obj));
+
+// Дз(10 продолжение) №5
+// let arr = ['Tony', 'Stark', 1, 45, 2, 5, 34, 9, 11];
+// let [nameTony, nameStark, ...number] = arr;
+// console.log(nameTony);
+// console.log(nameStark);
+
+// function arraySum(number) {
+//   let sum = 0;
+//   for (let i = 0; i < number.length; i++) {
+//     sum += number[i];
+//   }
+//   console.log(sum);
+// }
+// arraySum(number);
+
+
+// дз(11)ЗАДАЧА
+
+// var date1 = new Date('6/10/2009');
+// var date2 = new Date('5/09/2016');
+// var data3 = parseInt(date2 - date1);
+
+// alert(data3);
+
+
+// задание (12)№1
+
+// function printMessage(hello, name) {
+//     alert(hello +","+name);
+// }
+// setInterval(printMessage, 2000, "Ну здравствуй", "Петя");
+
+// или так:
+
+// let printMessage= setInterval(() => alert("Привет"+","+"Peter"), 1500);
+
+// задание (12)№2
+
+// function timer() {
+//     alert('Прошло 5 секунд');
+// }
+// setTimeout(timer,5000)
+
+// задание (12)№3
+
+// function printNumber(from, to) {
+//     for (let i = from; i <= to; i++){
+//         alert(i)
+//     }
+// }
+// printNumber(2, 5);
+
+// 2-й вариант:
+
+// function printNumbers(from, to) {
+//   let current = from;
+
+//   let timerId = setInterval(function () {
+//     alert(current);
+//     if (current == to) {
+//       clearInterval(timerId);
+//     }
+//     current++;
+//   }, 1000);
+// }
+
+// printNumbers(2, 10);
+
+// задание (12)№4
+
+// let btn = document.createElement('button');
+// btn.id = 'loading';
+// btn.innerHTML = 'начать загрузку';
+// document.body.append(btn);
+// console.log(btn);
+
+// btn.addEventListener('click', func);
+// function func() {
+//   btn.innerHTML = 'идет загрузка';
+//   btn.disabled = true;
+
+//   setTimeout(() => {
+//     btn.innerHTML = 'начать загрузку';
+//     btn.disabled = false;
+//   }, 5000);
+// }
  
+// Задание 7* по объектам
+// let selfGeneratedUser = {
+//   getInfo() {
+//     let questionName = prompt('Введите свое имя');
+//     let questionEmail = prompt('Введите свой email');
+//     let questionPhone = +prompt('Введите свой номер телефона');
+//     selfGeneratedUser.name = questionName;
+//     selfGeneratedUser.email = questionEmail;
+//     selfGeneratedUser.phone = questionPhone;
+//   },
+//   introduce() {
+//     if (selfGeneratedUser.name == '') {
+//     } else {
+//       alert(selfGeneratedUser.name);
+//     }
+//     if (selfGeneratedUser.email == '') {
+//     } else {
+//       alert(selfGeneratedUser.email);
+//     }
+//     if (selfGeneratedUser.phone == '') {
+//       return false;
+//     } else {
+//       alert(selfGeneratedUser.phone);
+//     }
+//   },
+//   name: '',
+//   email: '',
+//   phone: '',
+// };
+// selfGeneratedUser.getInfo();
+// selfGeneratedUser.introduce();
+// console.log(selfGeneratedUser);
